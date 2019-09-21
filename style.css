@@ -1,0 +1,201 @@
+/* Top level style */
+body {
+  font-family: font-family: Arial Narrow, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  color: white;
+  /* fix an issue w/ margins */
+  margin-top: -2rem;
+  min-height: 560px;
+  background: url(https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg)
+    50% 100% no-repeat;
+}
+
+main section {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+nav {
+  text-align: center;
+  padding-top: 14vh;
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+input {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+ input[type=search] {
+  color: white;
+  padding-left: 25px;
+  padding-top: 5px;
+  border: unset;
+  box-shadow: inset 1px 1px 1px 1px gray;
+  border-radius: 9999px;
+  background-image: linear-gradient(
+    to top,
+    rgba(130, 130, 130) 0%,
+    rgba(110, 110, 110) 50%,
+    rgba(95, 95, 95) 51%,
+    rgba(105, 105, 105) 100%
+  );
+  appearance: none;
+}
+
+/* navbar */
+
+.navbar {
+  font-size: 12px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.navbar > li {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar > li > a,
+.navbar > li > .nav-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  width: 100%;
+  align-self: center;
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  background-image: linear-gradient(
+    to top,
+    rgba(130, 130, 130) 0%,
+    rgba(110, 110, 110) 50%,
+    rgba(95, 95, 95) 51%,
+    rgba(105, 105, 105) 100%
+  );
+}
+
+.navbar > li > a:hover {
+  background-image: linear-gradient(
+    to top,
+    rgba(100, 100, 100) 0%,
+    rgba(80, 80, 80) 50%,
+    rgba(65, 65, 65) 51%,
+    rgba(85, 85, 85) 100%
+  );
+  cursor: pointer;
+}
+
+.navbar .nav-apple {
+  border: 1px solid gray;
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px 0 0 5px;
+  font-size: 24px;
+}
+
+.navbar .nav-search {
+  border: 1px solid gray;
+  border-radius: 0 5px 5px 0;
+  border-left: none;
+  position: relative;
+  padding: 0rem 1rem;
+}
+
+.navbar .search-icon {
+  /* font-size: 11px; */
+  position: absolute;
+  color: white;
+  top: 10px;
+  left: 22px;
+  z-index: 1;
+  cursor: auto;
+}
+
+/* video */
+
+.video {
+  cursor: pointer;
+  font-size: 22px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video:hover {
+  text-decoration: underline;
+}
+
+.video-circle {
+  font-weight: 200;
+  margin-left: 0.8rem;
+  font-size: 30px;
+}
+
+/* grid pictures */
+
+section.picture-grid {
+  display: flex;
+  max-width: 1440px;
+  margin: 0.5rem auto;
+}
+
+.picture-grid > img {
+  cursor: pointer;
+}
+
+/* footer */
+
+footer {
+  margin-top: 1.5rem;
+  margin-left: 18rem;
+  color: gray;
+  font-size: 10.5px;
+  font-weight: 400;
+}
+
+footer a {
+  color: dodgerblue;
+  padding: 0 0.2rem;
+}
+
+footer a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.links {
+  margin-left: 4rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright {
+  margin: 1rem 0;
+}
